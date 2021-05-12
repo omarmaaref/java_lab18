@@ -1,0 +1,49 @@
+ex1
+1)
+changement au niveau de l'importation du calculator class
+2)
+le programme creér 10 runnable threads de priorité differantes qui calculent le nombres des entiers premiers dans l intervalle
+[1,20000] et sauvegarde la reponse dans log.txt
+
+3)
+a- les variables qui definissent la priorité (ex: MAX_PRIORITY)
+b- 
+Priorité maximale:10
+Priorité normale:5
+Priorité minimale:1 
+c-
+-Les Threads 0,2,4,6 et 8 sont de la priorité maximale.
+-Les Threads 1,3,5,7 et 9 sont de la priorité minimale.
+d-
+-thread.setName(“nom thread" );
+-Nom d’un thread par defaut est Thread-i
+e-
+NEW ,RUNNABLE,BLOCKED TERMINATED WAITING TIMED_WAITING
+f-
+-On ne peut pas modifier l’id d’un thread .
+-on peut changer les etats d’un thread.
+g-
+gCes threads appartient au groupe (par defaut) courant.
+
+
+EX2:
+4)
+5)
+le programme crée 3 threads ayants des differents strings bonjour,a demain et
+bonsoir chaque thread afficher son string 1000 fois.
+6)
+asynchrone
+7)
+system.exit(0) est appelé par le thread main pour mettre fin au programme (y compris les threads appelés)
+(it terminates JVM)
+8)
+on constate que les threads n'ont pas fonctionné comme il faut car le programme s'est terminé tres tot.
+9)
+En ajoutant les join on constate que l’execution des thread sont en ordre ,
+thread 1 affiche ses 1000 mots puis thread2 puis thread 3 puis(« main
+terminer ») s’affiche et finalement system.exit(0)
+
+ex3:
+
+j ai utiliser volatile keyword pour modifier les variables entres les threads
+et atomicBoolean pour organiser l'acces au dequeue
